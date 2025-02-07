@@ -1,0 +1,14 @@
+{
+  "name": "automation-framework-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool to select and install an automation framework.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "automation-cli": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^9.0.0"
+  }
+}
