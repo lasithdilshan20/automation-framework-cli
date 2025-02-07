@@ -4,17 +4,15 @@ import chalk from 'chalk';
 import inquirer from 'inquirer';
 import { exec } from 'child_process';
 
-// Print welcome message and description with colors.
-console.log(chalk.bgBlue.white.bold('\n  Welcome to Automation FW  \n'));
-console.log(chalk.green('A CLI tool to help you select, install, and configure your automation framework.'));
+console.log(chalk.bgBlue.white.bold('\n  Welcome to Automation FW  🤖⚙️ \n'));
+console.log(chalk.green('🔧 A CLI tool to help you select, install, and configure your automation framework.'));
 console.log('');
 
-// Define the available frameworks with their installation and configuration commands.
 const frameworks = [
     {
         name: 'Cypress',
         installCommand: 'npm install --save-dev cypress',
-        configCommand: 'npx cypress verify' // You can also open the Test Runner with `npx cypress open`
+        configCommand: 'npx cypress verify'
     },
     {
         name: 'Playwright',
@@ -24,17 +22,15 @@ const frameworks = [
     {
         name: 'WebdriverIO',
         installCommand: 'npm install --save-dev @wdio/cli',
-        configCommand: 'npx wdio config' // This will start the interactive config wizard for WebdriverIO.
+        configCommand: 'npx wdio config'
     }
 ];
 
-// Define the supported languages.
 const languages = [
     { name: 'JavaScript' },
     { name: 'TypeScript' }
 ];
 
-// Prompt the user for choices.
 inquirer
     .prompt([
         {
